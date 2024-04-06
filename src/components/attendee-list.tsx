@@ -3,6 +3,7 @@ import { IconButton } from "./icon-button"
 import { Table } from "./table/table"
 import { TableHeader } from "./table/table-header"
 import { TableCell } from "./table/table-cell"
+import { TableRow } from "./table/table-row"
 
 export function AttendeeList() {
   return (
@@ -31,25 +32,25 @@ export function AttendeeList() {
         <tbody>
           {Array.from({ length: 8 }).map((_, i) => {
             return (
-              <tr key={i} className="border-b border-white/10 hover:bg-white/5">
-              <TableCell>
-                <input type="checkbox" className="size-4 bg-black/20 rounded border border-white/10" />
-              </TableCell>
-              <TableCell>123345</TableCell>
-              <TableCell>
-                <div className="flex flex-col gap-1">
-                  <span className="font-semibold text-white">Ecthon Almeida</span>
-                  <span>ecthon@gmail.com</span>
-                </div>
-              </TableCell>
-              <TableCell>7 dias atrás</TableCell>
-              <TableCell>3 dias atrás</TableCell>
-              <TableCell>
-                <IconButton transparent={true}>
-                  <MoreHorizontal className="size-4" />
-                </IconButton>
-              </TableCell>
-            </tr>
+              <TableRow key={i}>
+                <TableCell>
+                  <input type="checkbox" className="size-4 bg-black/20 rounded border border-white/10" />
+                </TableCell>
+                <TableCell>123345</TableCell>
+                <TableCell>
+                  <div className="flex flex-col gap-1">
+                    <span className="font-semibold text-white">Ecthon Almeida</span>
+                    <span>ecthon@gmail.com</span>
+                  </div>
+                </TableCell>
+                <TableCell>7 dias atrás</TableCell>
+                <TableCell>3 dias atrás</TableCell>
+                <TableCell>
+                  <IconButton transparent={true}>
+                    <MoreHorizontal className="size-4" />
+                  </IconButton>
+                </TableCell>
+              </TableRow>
             )
           })}
         </tbody>
@@ -81,6 +82,5 @@ export function AttendeeList() {
         </tfoot>
       </Table>
     </div>
-
   )
 }
