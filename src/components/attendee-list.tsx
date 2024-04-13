@@ -144,7 +144,7 @@ export function AttendeeList() {
                 <TableCell>
                   <div className="flex flex-col gap-1">
                     <span className="font-semibold text-white">{attendee.name}</span>
-                    <span>{attendee.email}</span>
+                    <span>{attendee.email.toLocaleLowerCase()}</span>
                   </div>
                 </TableCell>
                 <TableCell>{dayjs().to(attendee.createdAt)}</TableCell>
