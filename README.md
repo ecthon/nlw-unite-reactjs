@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+![Cover](./.github/cover.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# NLW Unite (React) 
 
-Currently, two official plugins are available:
+Essa aplicação foi desenvolvida durante o NLW Unite da Rocketseat utilizando React, TypeScript, Shadcn UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Executando
 
-## Expanding the ESLint configuration
+Após clonar o repositório, acesse a pasta do projeto e execute os comandos abaixo:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Acesse http://localhost:5173 para visualizar a aplicação.
+
+## API do projeto
+
+Aqui você tem acesso ao [repositório](https://github.com/ecthon/nlw-unite-node) do projeto back-end e outras informações para rodar a API.
